@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex container">
+        <div class="logo flex main-nav">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNluXQ6vz04sF8SVDF1nZvdwWUGQC5p0nK-jGXYH5bDQ&s"
+            alt=""
+            class="flex"
+          />
+
+          <div class="links">
+            <ul class="flex">
+              <li class="ipl">IPL</li>
+              <li class="finance">FINANCE</li>
+              <li class="politics">POLITICS</li>
+              <li class="tech">TECHNOLOGY</li>
+            </ul>
+          </div>
+
+          <div class="search-bar">
+            <input type="text" placeholder="e.g Politics" />
+            <button class="searchBtn">Search</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card-container container flex" id="cards-container"></div>
+    </main>
+
+    <template class="card-template">
+      <div class="card">
+        <div class="card-header">
+          <img src="https://via.placeholder.com/400x200"  id="news-img"/>
+        </div>
+        <div class="card-content">
+          <h3 class="title">This is the Title</h3>
+          <h6 class="date">Date 1/1/2001</h6>
+          <p class="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+            maiores unde possimus voluptas eum impedit facere ex laboriosam
+            quibusdam. Enim.
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
