@@ -4,9 +4,14 @@ let api = "https://newsapi.org/v2/everything?q=EveryThing&apiKey=8a5d1e0f3aa44c4
 window.addEventListener("load", getNews);
 
 async function getNews() {
-    const response = await fetch(api);
+   try{
+const response = await fetch(api);
     const data = await response.json();
-    bindData(data.articles);
+    bindData(data.articles)
+}catch(e){
+     console.log(e)
+}
+    
 }
 
 
